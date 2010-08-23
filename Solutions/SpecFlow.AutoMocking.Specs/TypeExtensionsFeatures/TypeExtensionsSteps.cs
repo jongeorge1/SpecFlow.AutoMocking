@@ -19,19 +19,19 @@ namespace SpecFlow.AutoMocking.Specs.TypeExtensionsFeatures
         [Given(@"I have a type that multiple parameterised constructors")]
         public void GivenIHaveATypeThatMultipleParameterisedConstructors()
         {
-            this.targetType = typeof(TypeExtensionDummyClassWithMultipleParameterisedConstructors);
+            this.targetType = typeof(DummyClassWithMultipleParameterisedConstructors);
         }
         
         [Given(@"I have a type that has a single parameterised constructor")]
         public void GivenIHaveATypeThatHasASingleParameterisedConstructor()
         {
-            this.targetType = typeof(TypeExtensionDummyClassWithSingleParameterisedConstructor);
+            this.targetType = typeof(DummyClassWithSingleParameterisedConstructor);
         }
 
         [Given(@"I have a type that only has the default constructor")]
         public void GivenIHaveATypeThatOnlyHasTheDefaultConstructor()
         {
-            this.targetType = typeof(TypeExtensionDummyClassWithDefaultConstructor);
+            this.targetType = typeof(DummyClassWithDefaultConstructor);
         }
 
         [When(@"I ask for the greediest constructor")]

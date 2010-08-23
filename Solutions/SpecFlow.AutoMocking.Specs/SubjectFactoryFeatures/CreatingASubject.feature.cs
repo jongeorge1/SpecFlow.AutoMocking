@@ -61,11 +61,27 @@ namespace SpecFlow.AutoMocking.Specs.SubjectFactoryFeatures
 #line 6
 this.ScenarioSetup(scenarioInfo);
 #line 7
-testRunner.Given("I have a subject that has no dependencies");
+testRunner.When("I request a subject with no dependencies be created");
 #line 8
-testRunner.When("I request the subject be created");
-#line 9
 testRunner.Then("an instance of the subject should be returned");
+#line hidden
+            testRunner.CollectScenarioErrors();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Create a subject when dependencies are required")]
+        public virtual void CreateASubjectWhenDependenciesAreRequired()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Create a subject when dependencies are required", ((string[])(null)));
+#line 10
+this.ScenarioSetup(scenarioInfo);
+#line 11
+testRunner.When("I request a subject with dependencies be created");
+#line 12
+testRunner.Then("an instance of the subject should be returned");
+#line 13
+testRunner.And("it should pass the constructor parameters retrieved from the subject dependency b" +
+                    "uilder");
 #line hidden
             testRunner.CollectScenarioErrors();
         }
