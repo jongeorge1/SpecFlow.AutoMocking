@@ -1,7 +1,7 @@
 ﻿Feature: Get latest headline
 	In order to keep up to date with the news
 	As a user
-	I want to see the latest headline
+	I want to get the latest news headline
 
 Scenario: Getting latest headline
 	Given There are 5 headlines available

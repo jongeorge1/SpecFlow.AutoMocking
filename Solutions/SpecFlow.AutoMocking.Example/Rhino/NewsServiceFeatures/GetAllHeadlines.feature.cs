@@ -30,8 +30,8 @@ namespace SpecFlow.AutoMocking.Example.Rhino.NewsServiceFeatures
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Get all headlines", "In order to keep up to date with the news\r\nAs a user\r\nI want to see all headlines" +
-                    "", ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Get all headlines", "In order to keep up to date with the news\r\nAs a user\r\nI want to get all news head" +
+                    "lines", ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         

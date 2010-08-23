@@ -1,7 +1,7 @@
 ﻿Feature: Get all headlines
 	In order to keep up to date with the news
 	As a user
-	I want to see all headlines
+	I want to get all news headlines
 
 Scenario: Getting all headlines
 	Given There are 20 headlines available

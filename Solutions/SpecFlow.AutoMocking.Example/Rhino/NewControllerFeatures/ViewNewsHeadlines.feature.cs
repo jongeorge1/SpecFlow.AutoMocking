@@ -9,7 +9,7 @@
 //  </auto-generated>
 // ------------------------------------------------------------------------------
 #region Designer generated code
-namespace SpecFlow.AutoMocking.Example.Rhino.NewsServiceFeatures
+namespace SpecFlow.AutoMocking.Example.Rhino.NewControllerFeatures
 {
     using TechTalk.SpecFlow;
     
@@ -17,21 +17,21 @@ namespace SpecFlow.AutoMocking.Example.Rhino.NewsServiceFeatures
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "1.3.4.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     [NUnit.Framework.TestFixtureAttribute()]
-    [NUnit.Framework.DescriptionAttribute("Get latest headline")]
-    public partial class GetLatestHeadlineFeature
+    [NUnit.Framework.DescriptionAttribute("View latest news headline")]
+    public partial class ViewLatestNewsHeadlineFeature
     {
         
         private static TechTalk.SpecFlow.ITestRunner testRunner;
         
-#line 1 "GetLatestHeadline.feature"
+#line 1 "ViewNewsHeadlines.feature"
 #line hidden
         
         [NUnit.Framework.TestFixtureSetUpAttribute()]
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Get latest headline", "In order to keep up to date with the news\r\nAs a user\r\nI want to get the latest ne" +
-                    "ws headline", ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "View latest news headline", "In order to keep up to date with the news\r\nAs a user\r\nI want to view the latest n" +
+                    "ews headline", ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -54,35 +54,18 @@ namespace SpecFlow.AutoMocking.Example.Rhino.NewsServiceFeatures
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Getting latest headline")]
-        public virtual void GettingLatestHeadline()
+        [NUnit.Framework.DescriptionAttribute("Viewing latest headline")]
+        public virtual void ViewingLatestHeadline()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Getting latest headline", ((string[])(null)));
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Viewing latest headline", ((string[])(null)));
 #line 6
 this.ScenarioSetup(scenarioInfo);
 #line 7
-testRunner.Given("There are 5 headlines available");
+testRunner.Given("I am viewing news");
 #line 8
-testRunner.When("I ask for the latest headline");
+testRunner.When("I ask for the view");
 #line 9
-testRunner.Then("the most recent headline should be returned");
-#line hidden
-            testRunner.CollectScenarioErrors();
-        }
-        
-        [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Getting latest headline when there are no headlines")]
-        public virtual void GettingLatestHeadlineWhenThereAreNoHeadlines()
-        {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Getting latest headline when there are no headlines", ((string[])(null)));
-#line 11
-this.ScenarioSetup(scenarioInfo);
-#line 12
-testRunner.Given("There are 0 headlines available");
-#line 13
-testRunner.When("I ask for the latest headline");
-#line 14
-testRunner.Then("no result should be returned");
+testRunner.Then("the result should contain the latest headline");
 #line hidden
             testRunner.CollectScenarioErrors();
         }
