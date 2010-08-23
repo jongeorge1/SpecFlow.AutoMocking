@@ -33,6 +33,7 @@
     <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="nunit.framework, Version=2.5.3.9345, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -40,9 +41,53 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
+    <Reference Include="TechTalk.SpecFlow">
+      <HintPath>..\..\ReferencedAssemblies\SpecFlow\TechTalk.SpecFlow.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SubjectFactoryFeatures\CreatingASubject.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CreatingASubject.feature</DependentUpon>
+    </Compile>
+    <Compile Include="TypeExtensionsFeatures\GetGreediestConstructureForAType.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GetGreediestConstructureForAType.feature</DependentUpon>
+    </Compile>
+    <Compile Include="TypeExtensionsFeatures\GetProperNameForAGenericType.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GetProperNameForAGenericType.feature</DependentUpon>
+    </Compile>
+    <Compile Include="TypeExtensionsFeatures\TypeExtensionDummyClasses.cs" />
+    <Compile Include="TypeExtensionsFeatures\TypeExtensionsSteps.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="SubjectFactoryFeatures\CreatingASubject.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>CreatingASubject.feature.cs</LastGenOutput>
+    </None>
+    <None Include="TypeExtensionsFeatures\GetGreediestConstructureForAType.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>GetGreediestConstructureForAType.feature.cs</LastGenOutput>
+    </None>
+    <None Include="TypeExtensionsFeatures\GetProperNameForAGenericType.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>GetProperNameForAGenericType.feature.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ObservationContextFeatures\" />
+    <Folder Include="SubjectDependencyBuilderFeatures\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SpecFlow.AutoMocking\SpecFlow.AutoMocking.csproj">
+      <Project>{9FA342DB-A9C2-4459-B62D-2E60E6271D92}</Project>
+      <Name>SpecFlow.AutoMocking</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
