@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpecFlow.AutoMocking", "SpecFlow.AutoMocking\SpecFlow.AutoMocking.csproj", "{9FA342DB-A9C2-4459-B62D-2E60E6271D92}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpecFlow.AutoMocking.Example", "SpecFlow.AutoMocking.Example\SpecFlow.AutoMocking.Example.csproj", "{2BFD99FD-116F-41D4-A834-2F13132DEB39}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpecFlow.AutoMocking.Specs", "SpecFlow.AutoMocking.Specs\SpecFlow.AutoMocking.Specs.csproj", "{AFA1BB3D-18DC-47E7-8D7B-1BA9B41C963E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9FA342DB-A9C2-4459-B62D-2E60E6271D92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FA342DB-A9C2-4459-B62D-2E60E6271D92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FA342DB-A9C2-4459-B62D-2E60E6271D92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FA342DB-A9C2-4459-B62D-2E60E6271D92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BFD99FD-116F-41D4-A834-2F13132DEB39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BFD99FD-116F-41D4-A834-2F13132DEB39}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BFD99FD-116F-41D4-A834-2F13132DEB39}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BFD99FD-116F-41D4-A834-2F13132DEB39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFA1BB3D-18DC-47E7-8D7B-1BA9B41C963E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFA1BB3D-18DC-47E7-8D7B-1BA9B41C963E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFA1BB3D-18DC-47E7-8D7B-1BA9B41C963E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFA1BB3D-18DC-47E7-8D7B-1BA9B41C963E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
