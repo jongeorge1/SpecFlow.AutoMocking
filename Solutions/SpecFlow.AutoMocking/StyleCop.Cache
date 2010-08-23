@@ -1,0 +1,168 @@
+<stylecopresultscache>
+  <version>10</version>
+  <sourcecode name="ISubjectFactory.cs" parser="Microsoft.StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>06/25/2010 09:59:06</timestamp>
+      <milliseconds>706</milliseconds>
+    </settings>
+    <timestamp>08/23/2010 15:37:12</timestamp>
+    <milliseconds>97</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name="ITestState.cs" parser="Microsoft.StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>06/25/2010 09:59:06</timestamp>
+      <milliseconds>706</milliseconds>
+    </settings>
+    <timestamp>08/23/2010 15:37:21</timestamp>
+    <milliseconds>171</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name="IMockFactory.cs" parser="Microsoft.StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>06/25/2010 09:59:06</timestamp>
+      <milliseconds>706</milliseconds>
+    </settings>
+    <timestamp>08/23/2010 15:35:28</timestamp>
+    <milliseconds>375</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name="ObservationContextArgs.cs" parser="Microsoft.StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>06/25/2010 09:59:06</timestamp>
+      <milliseconds>706</milliseconds>
+    </settings>
+    <timestamp>08/23/2010 15:45:13</timestamp>
+    <milliseconds>526</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name="IDependencyBag.cs" parser="Microsoft.StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>06/25/2010 09:59:06</timestamp>
+      <milliseconds>706</milliseconds>
+    </settings>
+    <timestamp>08/23/2010 15:45:13</timestamp>
+    <milliseconds>585</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name="ISubjectDependencyBuilder.cs" parser="Microsoft.StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>06/25/2010 09:59:06</timestamp>
+      <milliseconds>706</milliseconds>
+    </settings>
+    <timestamp>08/23/2010 15:37:04</timestamp>
+    <milliseconds>859</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name="AssemblyInfo.cs" parser="Microsoft.StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>06/25/2010 09:59:06</timestamp>
+      <milliseconds>706</milliseconds>
+    </settings>
+    <timestamp>08/23/2010 15:30:19</timestamp>
+    <milliseconds>490</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name="IObservationContext.cs" parser="Microsoft.StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>06/25/2010 09:59:06</timestamp>
+      <milliseconds>706</milliseconds>
+    </settings>
+    <timestamp>08/23/2010 15:45:13</timestamp>
+    <milliseconds>544</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name="ObservationContextFactory.cs" parser="Microsoft.StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>06/25/2010 09:59:06</timestamp>
+      <milliseconds>706</milliseconds>
+    </settings>
+    <timestamp>08/23/2010 15:45:09</timestamp>
+    <milliseconds>550</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name=".NETFramework,Version=v4.0.AssemblyAttributes.cs" parser="Microsoft.StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>06/25/2010 09:59:06</timestamp>
+      <milliseconds>706</milliseconds>
+    </settings>
+    <timestamp>05/05/2010 10:03:10</timestamp>
+    <milliseconds>371</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name="RhinoMocksMockFactory.cs" parser="Microsoft.StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>06/25/2010 09:59:06</timestamp>
+      <milliseconds>706</milliseconds>
+    </settings>
+    <timestamp>08/23/2010 15:35:28</timestamp>
+    <milliseconds>383</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name="TestState.cs" parser="Microsoft.StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>06/25/2010 09:59:06</timestamp>
+      <milliseconds>706</milliseconds>
+    </settings>
+    <timestamp>08/23/2010 15:45:13</timestamp>
+    <milliseconds>573</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name="TypeExtensions.cs" parser="Microsoft.StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>06/25/2010 09:59:06</timestamp>
+      <milliseconds>706</milliseconds>
+    </settings>
+    <timestamp>08/23/2010 15:46:16</timestamp>
+    <milliseconds>703</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name="SubjectFactory.cs" parser="Microsoft.StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>06/25/2010 09:59:06</timestamp>
+      <milliseconds>706</milliseconds>
+    </settings>
+    <timestamp>08/23/2010 15:46:16</timestamp>
+    <milliseconds>726</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name="ObservationContext.cs" parser="Microsoft.StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>06/25/2010 09:59:06</timestamp>
+      <milliseconds>706</milliseconds>
+    </settings>
+    <timestamp>08/23/2010 15:46:35</timestamp>
+    <milliseconds>992</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name="SubjectDependencyBuilder.cs" parser="Microsoft.StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>06/25/2010 09:59:06</timestamp>
+      <milliseconds>706</milliseconds>
+    </settings>
+    <timestamp>08/23/2010 15:46:42</timestamp>
+    <milliseconds>765</milliseconds>
+    <violations />
+  </sourcecode>
+  <sourcecode name="Specification.cs" parser="Microsoft.StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>06/25/2010 09:59:06</timestamp>
+      <milliseconds>706</milliseconds>
+    </settings>
+    <timestamp>08/23/2010 15:46:23</timestamp>
+    <milliseconds>218</milliseconds>
+    <violations />
+  </sourcecode>
+  <project key="-315693782">
+    <configuration>DEBUG;TRACE</configuration>
+  </project>
+  <sourcecode name="StepDefinitions.cs" parser="Microsoft.StyleCop.CSharp.CsParser">
+    <settings>
+      <timestamp>06/25/2010 09:59:06</timestamp>
+      <milliseconds>706</milliseconds>
+    </settings>
+    <timestamp>08/23/2010 15:51:05</timestamp>
+    <milliseconds>105</milliseconds>
+    <violations />
+  </sourcecode>
+</stylecopresultscache>
