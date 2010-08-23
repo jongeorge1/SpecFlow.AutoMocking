@@ -17,3 +17,4 @@ _ReSharper.*
 *.dbmdl
 error-*.xml
 StyleCop.Cache
+TestResult.xml
