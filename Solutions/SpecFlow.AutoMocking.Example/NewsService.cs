@@ -19,6 +19,11 @@ namespace SpecFlow.AutoMocking.Example
 
         public string GetLatestHeadline()
         {
+            if (this.headlines.Count == 0)
+            {
+                return null;
+            }
+            
             return this.headlines.Last();
         }
     }
