@@ -27,7 +27,7 @@
             }
 
             // Manually add a required simple constructor argument
-            ProvideBasicConstructorArgument(this.newsHeadlines);
+            this.ProvideBasicConstructorArgument(this.newsHeadlines);
         }
 
         [Then(@"a list of (.*) headlines should be returned")]
@@ -52,13 +52,13 @@
         [When(@"I ask for all the headlines")]
         public void WhenIAskForAllTheHeadlines()
         {
-            this.result = Subject.GetAllHeadlines();
+            this.result = this.Subject.GetAllHeadlines();
         }
 
         [When(@"I ask for the latest headline")]
         public void WhenIAskForTheLatestHeadline()
         {
-            this.result = Subject.GetLatestHeadline();
+            this.result = this.Subject.GetLatestHeadline();
         }
     }
 }

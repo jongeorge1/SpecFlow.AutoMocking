@@ -18,3 +18,4 @@ _ReSharper.*
 error-*.xml
 StyleCop.Cache
 TestResult.xml
+*.VisualState.xml

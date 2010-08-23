@@ -6,54 +6,51 @@ namespace SpecFlow.AutoMocking
     public abstract class StepDefinitions<TContract, TSubject, TMockFactoryAdapter>
         where TSubject : TContract where TMockFactoryAdapter : IMockFactory, new()
     {
-        private static ITestState<TContract> testState;
+        private readonly ITestState<TContract> testState;
 
         protected StepDefinitions()
         {
-            testState = new TestState<TContract>(this, this.CreateSubject);
+            this.testState = new TestState<TContract>(this, this.CreateSubject);
 
             var args = new ObservationContextArgs<TContract>
-                {
-                    MockFactory = new TMockFactoryAdapter(), 
-                    State = testState, Test = this
-                };
+                { MockFactory = new TMockFactoryAdapter(), State = this.testState, Test = this };
 
-            ObservationContext = new ObservationContextFactory().CreateFrom(args);
+            this.ObservationContext = new ObservationContextFactory().CreateFrom(args);
         }
 
-        protected static TContract Subject
+        protected TContract Subject
         {
             get
             {
-                if (testState.Subject == null)
+                if (this.testState.Subject == null)
                 {
-                    testState.BuildSubject();
+                    this.testState.BuildSubject();
                 }
 
-                return testState.Subject;
+                return this.testState.Subject;
             }
         }
 
-        private static IObservationContext ObservationContext { get; set; }
+        private IObservationContext ObservationContext { get; set; }
 
-        protected static TInterface An<TInterface>() where TInterface : class
+        protected TInterface An<TInterface>() where TInterface : class
         {
-            return ObservationContext.An<TInterface>();
-        }
-
-        protected static TDependency DependencyOf<TDependency>() where TDependency : class
-        {
-            return ObservationContext.DependencyOf<TDependency>();
-        }
-
-        protected static void ProvideBasicConstructorArgument<TArgument>(TArgument value)
-        {
-            ObservationContext.ProvideABasicSubjectConstructorArgument(value);
+            return this.ObservationContext.An<TInterface>();
         }
 
         protected virtual TContract CreateSubject()
         {
-            return ObservationContext.BuildSubject<TContract, TSubject>();
+            return this.ObservationContext.BuildSubject<TContract, TSubject>();
+        }
+
+        protected TDependency DependencyOf<TDependency>() where TDependency : class
+        {
+            return this.ObservationContext.DependencyOf<TDependency>();
+        }
+
+        protected void ProvideBasicConstructorArgument<TArgument>(TArgument value)
+        {
+            this.ObservationContext.ProvideABasicSubjectConstructorArgument(value);
         }
     }
 }

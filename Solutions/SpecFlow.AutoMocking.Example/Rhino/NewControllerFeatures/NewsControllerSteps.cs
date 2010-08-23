@@ -11,29 +11,29 @@ namespace SpecFlow.AutoMocking.Example.Rhino.NewControllerFeatures
     [Binding]
     public class NewsControllerSteps : StepDefinitions<NewsController>
     {
-        private INewsService newsService;
-
         private const string TheLatestHeadline = "The latest headline";
+
+        private INewsService newsService;
 
         private string result;
 
         [Given(@"I am viewing news")]
         public void GivenIAmViewingNews()
         {
-            newsService = DependencyOf<INewsService>();
-            newsService.Stub(x => x.GetLatestHeadline()).Return(TheLatestHeadline);
-        }
-
-        [When(@"I ask for the view")]
-        public void WhenIAskForTheView()
-        {
-            result = Subject.Index();
+            this.newsService = this.DependencyOf<INewsService>();
+            this.newsService.Stub(x => x.GetLatestHeadline()).Return(TheLatestHeadline);
         }
 
         [Then(@"the result should contain the latest headline")]
         public void ThenTheResultShouldContainTheLatestHeadline()
         {
-            Assert.That(result, Is.EqualTo(TheLatestHeadline));
+            Assert.That(this.result, Is.EqualTo(TheLatestHeadline));
+        }
+
+        [When(@"I ask for the view")]
+        public void WhenIAskForTheView()
+        {
+            this.result = this.Subject.Index();
         }
     }
 }
