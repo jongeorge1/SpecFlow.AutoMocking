@@ -54,19 +54,51 @@ namespace SpecFlow.AutoMocking.Specs.TypeExtensionsFeatures
         }
         
         [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Get proper name for type with no type parameter")]
+        public virtual void GetProperNameForTypeWithNoTypeParameter()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Get proper name for type with no type parameter", ((string[])(null)));
+#line 6
+this.ScenarioSetup(scenarioInfo);
+#line 7
+testRunner.Given("I have a class with no type parameters");
+#line 8
+testRunner.When("I ask for the proper name");
+#line 9
+testRunner.Then("the result should contain the proper name for the type");
+#line hidden
+            testRunner.CollectScenarioErrors();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Get proper name for type with single type parameter")]
-        [NUnit.Framework.CategoryAttribute("mytag")]
         public virtual void GetProperNameForTypeWithSingleTypeParameter()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Get proper name for type with single type parameter", new string[] {
-                        "mytag"});
-#line 7
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Get proper name for type with single type parameter", ((string[])(null)));
+#line 11
 this.ScenarioSetup(scenarioInfo);
-#line 8
+#line 12
 testRunner.Given("I have a class with a single type parameter");
-#line 9
+#line 13
 testRunner.When("I ask for the proper name");
-#line 10
+#line 14
+testRunner.Then("the result should contain the proper name for the type");
+#line hidden
+            testRunner.CollectScenarioErrors();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Get proper name for type with multiple type parameters")]
+        public virtual void GetProperNameForTypeWithMultipleTypeParameters()
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Get proper name for type with multiple type parameters", ((string[])(null)));
+#line 16
+this.ScenarioSetup(scenarioInfo);
+#line 17
+testRunner.Given("I have a class with a multiple type parameters");
+#line 18
+testRunner.When("I ask for the proper name");
+#line 19
 testRunner.Then("the result should contain the proper name for the type");
 #line hidden
             testRunner.CollectScenarioErrors();
