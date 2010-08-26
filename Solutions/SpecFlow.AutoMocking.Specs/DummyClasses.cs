@@ -2,11 +2,11 @@ namespace SpecFlow.AutoMocking.Specs
 {
     using System.Data;
 
-    internal class DummyClassWithDefaultConstructor
+    public class DummyClassWithDefaultConstructor
     {
     }
 
-    internal class DummyClassWithSingleParameterisedConstructor
+    public class DummyClassWithSingleParameterisedConstructor
     {
         public DummyClassWithSingleParameterisedConstructor(IDbConnection connection)
         {
@@ -16,7 +16,7 @@ namespace SpecFlow.AutoMocking.Specs
         public IDbConnection Connection { get; set; }
     }
 
-    internal class DummyClassWithMultipleParameterisedConstructors
+    public class DummyClassWithMultipleParameterisedConstructors
     {
         public DummyClassWithMultipleParameterisedConstructors(IDbConnection connection)
             : this(connection, null)

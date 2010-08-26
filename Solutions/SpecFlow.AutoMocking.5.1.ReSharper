@@ -144,7 +144,6 @@
                 <Static/>
                 <Name/>
             </Sort>
-            <Group Region="Constants and Fields"/>
         </Entry>
 
         <!-- constructors -->
@@ -160,7 +159,6 @@
                 <Kind Order="constructor destructor"/>
                 <Access Order="public internal protected-internal protected private"/>
             </Sort>
-            <Group Region="Constructors and Destructors"/>
         </Entry>
 
         <!-- delegates -->
@@ -173,7 +171,6 @@
                 <Static />
                 <Name/>
             </Sort>
-            <Group Region="Delegates"/>
         </Entry>
 
         <!-- events -->
@@ -186,7 +183,6 @@
                 <Static />
                 <Name/>
             </Sort>
-            <Group Region="Events"/>
         </Entry>
 
         <!-- enum -->
@@ -198,7 +194,6 @@
                 <Access Order="public internal protected-internal protected private" />
                 <Name/>
             </Sort>
-            <Group Region="Enums"/>
         </Entry>
 
         <!-- interfaces -->
@@ -210,7 +205,6 @@
                 <Access Order="public internal protected-internal protected private" />
                 <Name/>
             </Sort>
-            <Group Region="Interfaces"/>
         </Entry>
 
         <!-- properties -->
@@ -223,7 +217,6 @@
                 <Static/>
                 <Name/>
             </Sort>
-            <Group Region="Properties"/>
         </Entry>
 
         <!-- indexers -->
@@ -237,7 +230,6 @@
                 <Static/>
                 <Name/>
             </Sort>
-            <Group Region="Indexers"/>
         </Entry>
 
         <!-- operator -->
@@ -250,7 +242,6 @@
                 <Static/>
                 <Name/>
             </Sort>
-            <Group Region="Operators"/>
         </Entry>
 
         <!-- public methods -->
@@ -266,7 +257,6 @@
                 <Static/>
                 <Name/>
             </Sort>
-            <Group Region="Public Methods"/>
         </Entry>
 
         <!-- Implemented Interfaces -->
@@ -283,9 +273,6 @@
                 <Static/>
                 <Name/>
             </Sort>
-            <Group Region="Implemented Interfaces">
-                <ImplementsInterface Region="${ImplementsInterface}" />
-            </Group>
         </Entry>
 
         <!-- other methods -->
@@ -298,7 +285,6 @@
                 <Static/>
                 <Name/>
             </Sort>
-            <Group Region="Methods"/>
         </Entry>
 
         <!-- Nested structs -->
