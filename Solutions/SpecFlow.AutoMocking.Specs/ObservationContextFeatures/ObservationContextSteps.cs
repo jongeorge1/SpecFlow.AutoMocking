@@ -1,6 +1,7 @@
 namespace SpecFlow.AutoMocking.Specs.ObservationContextFeatures
 {
     using System.Collections;
+    using System.Data;
 
     using global::Rhino.Mocks;
 
@@ -26,7 +27,11 @@ namespace SpecFlow.AutoMocking.Specs.ObservationContextFeatures
 
         private ArrayList theDependency;
 
-        private IEnumerable result;
+        private IEnumerable theReturnedDependency;
+
+        private DummyClassWithSingleParameterisedConstructor theReturnedSubject;
+
+        private DummyClassWithSingleParameterisedConstructor theSubject;
 
         [Given(@"I have an observation context")]
         public void GivenIHaveAnObservationContext()
@@ -43,7 +48,7 @@ namespace SpecFlow.AutoMocking.Specs.ObservationContextFeatures
         [Then(@"the mock should be returned")]
         public void ThenTheMockShouldBeReturned()
         {
-            Assert.That(this.result, Is.EqualTo(this.theDependency));
+            Assert.That(this.theReturnedDependency, Is.EqualTo(this.theDependency));
         }
 
         [Then(@"the observation context should use the subject dependency builder to create the mock")]
@@ -52,13 +57,37 @@ namespace SpecFlow.AutoMocking.Specs.ObservationContextFeatures
             this.subjectDependencyBuilder.AssertWasCalled(s => s.DependencyOf<IEnumerable>());
         }
 
+        [Then(@"the observation context should use the subject factory to create the subject")]
+        public void ThenTheObservationContextShouldUseTheSubjectFactoryToCreateTheSubject()
+        {
+            this.subjectFactory.AssertWasCalled(f => f.Create<DummyClassWithSingleParameterisedConstructor, DummyClassWithSingleParameterisedConstructor>());
+        }
+
+        [Then(@"the subject should be returned")]
+        public void ThenTheSubjectShouldBeReturned()
+        {
+            Assert.That(this.theReturnedSubject, Is.EqualTo(this.theSubject));
+        }
+
         [When(@"I ask the observation context to create a mock a dependency")]
         public void WhenIAskTheObservationContextToCreateAMockADependency()
         {
             this.theDependency = new ArrayList();
             this.subjectDependencyBuilder.Stub(s => s.DependencyOf<IEnumerable>()).Return(this.theDependency);
 
-            this.result = this.subject.DependencyOf<IEnumerable>();
+            this.theReturnedDependency = this.subject.DependencyOf<IEnumerable>();
+        }
+
+        [When(@"I ask the observation context to create the subject")]
+        public void WhenIAskTheObservationContextToCreateTheSubject()
+        {
+            this.theSubject = new DummyClassWithSingleParameterisedConstructor(MockRepository.GenerateMock<IDbConnection>());
+            this.subjectFactory.Stub(
+                f =>
+                f.Create<DummyClassWithSingleParameterisedConstructor, DummyClassWithSingleParameterisedConstructor>()).
+                Return(this.theSubject);
+
+            this.theReturnedSubject = this.subject.BuildSubject<DummyClassWithSingleParameterisedConstructor, DummyClassWithSingleParameterisedConstructor>();
         }
     }
 }

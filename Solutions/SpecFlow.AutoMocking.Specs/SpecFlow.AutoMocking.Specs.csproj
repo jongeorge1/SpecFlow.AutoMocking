@@ -52,6 +52,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ObservationContextFeatures\BuildASubject.feature.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BuildASubject.feature</DependentUpon>
+    </Compile>
     <Compile Include="ObservationContextFeatures\CreateADependency.feature.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -79,6 +84,10 @@
     <Compile Include="TypeExtensionsFeatures\TypeExtensionsSteps.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="ObservationContextFeatures\BuildASubject.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>BuildASubject.feature.cs</LastGenOutput>
+    </None>
     <None Include="ObservationContextFeatures\CreateADependency.feature">
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>CreateADependency.feature.cs</LastGenOutput>
