@@ -13,7 +13,10 @@ namespace SpecFlow.AutoMocking
             this.testState = new TestState<TContract>(this, this.CreateSubject);
 
             var args = new ObservationContextArgs<TContract>
-                { MockFactory = new TMockFactoryAdapter(), State = this.testState, Test = this };
+            {
+                MockFactory = new TMockFactoryAdapter(), 
+                State = this.testState, Test = this
+            };
 
             this.ObservationContext = new ObservationContextFactory().CreateFrom(args);
         }
